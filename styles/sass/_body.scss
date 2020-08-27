@@ -62,9 +62,10 @@ ul {
 }
 
 .radioButton label:hover {
-    transition-delay: .25s;
     background-color: darken($secondaryColor, 20);
 }
+
+// RE-FACTOR: FIX THE FOCUS BUTTON TO MAKE THEM TABBABLE
 
 // Main: Book List
 
@@ -117,6 +118,17 @@ button.productUrl:focus {
 .bookContainer:last-child {
     margin-bottom: 0;
 }
+
+// RETURN BUTTON / TRY ANOTHER GENRE
+// REFACTOR: This section is only called when the button is appended
+// .returnButtonContainer {
+//     padding-top: 50px;
+// }
+
+// .returnButton {
+//     display: block;
+//     margin: 0 auto;
+// }
 
 // Footer 
 
