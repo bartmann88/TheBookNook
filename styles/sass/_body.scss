@@ -1,131 +1,138 @@
 // Header
 
 header {
-    background-color: $primaryColor;
-    height: 100vh;
-    background-size: cover;
-
+  background-color: $primaryColor;
+  height: 100vh;
+  background-size: cover;
 }
 
 .headerContainer {
-    display: flex;
-    padding-top: 150px;
-    
-    .headerTitle {
-        width: 60%;
-        
-        h1,
-        p {
-            padding-bottom: 30px;
-        }
-    }
+  display: flex;
+  padding-top: 150px;
 
-    .headerImage {
-        width: 40%;
+  .headerTitle {
+    width: 60%;
+
+    h1,
+    p {
+      padding-bottom: 30px;
     }
+  }
+
+  .headerImage {
+    width: 40%;
+  }
 }
 
 // Main: Book Categories
 
 main {
-    background-color: $primaryColor;
-    padding-top: 150px;
+  background-color: $primaryColor;
+  padding-top: 150px;
 }
 
 .bookCategory {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .radioButton input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
+  opacity: 0;
+  position: fixed;
+  width: 0;
 }
 
 .radioButton label {
-    display: inline-block;
-    font-family: $secondaryFont;
-    font-size: 4rem;
-    background-color: $secondaryColor;
-    color: $primaryFontColor;
-    padding: 10px 40px;
-    margin: 0 20px 20px 0;
-    border: 4px solid $borderColor;
-    border-radius: 5px;
-    
-    cursor: pointer;
+  display: inline-block;
+  font-family: $secondaryFont;
+  font-size: 4rem;
+  background-color: $secondaryColor;
+  color: $primaryFontColor;
+  padding: 10px 40px;
+  margin: 0 20px 20px 0;
+  border: 4px solid $borderColor;
+  border-radius: 5px;
+
+  cursor: pointer;
 }
 
 .radioButton label:hover {
-    transition-delay: .25s;
-    background-color: darken($secondaryColor, 20);
+  transition-delay: 0.25s;
+  background-color: darken($secondaryColor, 20);
 }
 
 // Main: Book List
 
 .bookContainer {
-    background-color: $tertiaryColor;
-    height: 100%; 
-    padding: 30px 30px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-    display: flex;
+  background-color: $tertiaryColor;
+  height: 100%;
+  padding: 30px 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
 }
 
 .rankContainer {
-    width: calc(15% - 40px);
+  width: calc(30% - 30px);
+  margin: 0.5rem 1rem;
+  //   padding: 0.25rem;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    padding-right: 1rem;
+  }
 }
 
 .infoContainer {
-    width: 85%;
+  width: 85%;
 }
 
 h2,
 h3 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 p.bookDescription {
-    font-size: 2.5rem;
-    line-height: 1.2;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 button.productUrl {
-    margin-top: 15px;
-    background-color: $linkColor;
+  margin-top: 10px;
+  background-color: $linkColor;
 }
 
 button.productUrl:hover {
-    background-color: darken($linkColor, 10);
+  background-color: darken($linkColor, 10);
 }
 
 button.productUrl:focus {
-    border: solid 3px $borderColor;
+  border: solid 3px $borderColor;
 }
 
 .ranking {
-    font-family: inherit;
-    font-size: 8rem;
-    color: $linkColor;
+  font-family: inherit;
+  font-size: 8rem;
+  color: $linkColor;
 }
 
 .bookContainer:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-// Footer 
+// Footer
 
 footer {
-    background-color: $primaryColor;
-    text-align: center;
+  background-color: $primaryColor;
+  text-align: center;
 
-    p {
-        font-size: 2rem;
-        padding: 20px 0;
-    }
+  p {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
 }
