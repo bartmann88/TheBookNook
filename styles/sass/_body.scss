@@ -31,13 +31,18 @@ main {
   padding-top: 150px;
 }
 
+// form {
+//   display: flex;
+// }
+
 .bookCategory {
   padding-top: 100px;
 }
 
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .radioButton input[type="radio"] {
@@ -50,12 +55,14 @@ ul {
   display: inline-block;
   font-family: $secondaryFont;
   font-size: 4rem;
+  width: 35rem;
   background-color: $secondaryColor;
   color: $primaryFontColor;
-  padding: 10px 40px;
+  padding: 10px 0;
   margin: 0 20px 20px 0;
   border: 4px solid $borderColor;
   border-radius: 5px;
+  text-align: center;
 
   cursor: pointer;
 }
@@ -77,13 +84,13 @@ ul {
 }
 
 .rankContainer {
-  width: calc(30% - 30px);
+  width: calc(35% - 30px);
   margin: 0.5rem 1rem;
   //   padding: 0.25rem;
   img {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: contain;
     padding-right: 1rem;
   }
 }

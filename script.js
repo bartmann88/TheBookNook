@@ -11,11 +11,25 @@ bookApp.scroll = function (event) {
   });
 };
 
+bookApp.scrollList = function (selection) {
+  $(".bookCategory").on("click", function (selection) {
+    $("html").animate(
+      {
+        scrollTop: $(".bookList").offset().top,
+      },
+      1000
+    );
+  });
+};
+
 // Type parameter will return data based on given variable
 // Create variables for each book category - created specifically for type
 const pictureBooks = "picture-books";
 const childrenMiddleGrade = "childrens-middle-grade";
 const seriesBooks = "series-books";
+const youngAdultBooks = "young-adult";
+const gamesActivities = "games-and-activities";
+const educationBooks = "education";
 
 // Gets book list from the third-party API using AJAX request
 // Create a generic api calling function called getList which will accept type -  to pull data which is passed from parameter
@@ -86,10 +100,23 @@ $("#seriesBook").on("change", function () {
   bookApp.radioButtonChangeHandler(seriesBooks);
 });
 
+$("#youngAdultBook").on("change", function () {
+  bookApp.radioButtonChangeHandler(youngAdultBooks);
+});
+
+$("#activities").on("change", function () {
+  bookApp.radioButtonChangeHandler(gamesActivities);
+});
+
+$("#education").on("change", function () {
+  bookApp.radioButtonChangeHandler(educationBooks);
+});
+
 // To initialize the app
 bookApp.init = function () {
   bookApp.scroll();
   bookApp.getList();
+  bookApp.scrollList();
 };
 
 // Document ready

@@ -1,66 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 4: Children Book App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="wrapper headerContainer">
-            <div class="headerTitle">
-                <h1> The Book Nook</h1>
-                <p>Not sure what your child should read next? Choose a category to view this week's children book bestsellers from the New York Times Bestsellers!</p>
-                <button>Start Reading!</button>
-            </div>
-            
-            <div class="headerImage">
-                <img src="./assets/cloudsun.png" alt="Cute image of a sun and cloud with rainbow droplets.">
-            </div>
+      <div class="wrapper headerContainer">
+        <div class="headerTitle">
+          <h1>The Book Nook</h1>
+          <p>
+            Not sure what your child should read next? Choose a category to view
+            this week's children book bestsellers from the New York Times
+            Bestsellers!
+          </p>
+          <button>Start Reading!</button>
         </div>
+
+        <div class="headerImage">
+          <img
+            src="./assets/cloudsun.png"
+            alt="Cute image of a sun and cloud with rainbow droplets."
+          />
+        </div>
+      </div>
     </header>
 
     <main>
-        <!-- Book Categories -->
-        <section class="wrapper bookCategory">
-            <form action="#"> 
-                <ul>
-                    <li class="radioButton">
-                        <label aria-label="Click to add picture book list" for="pictureBook">Picture Book</label>
-                        <input aria-hidden="true" type="radio" name="bookCategory" value="pictureBook" id="pictureBook">
-                    </li>
-                    <li class="radioButton">
-                        <label aria-label="Click to add children book list" for="childrenBook">Children Book</label>
-                        <input aria-hidden="true" type="radio" name="bookCategory" value="childrenBook" id="childrenBook">
-                    </li>
-                    <li class="radioButton">
-                        <label aria-label="Click to add children series book list" for="seriesBook">Children Series</label>
-                        <input aria-hidden="true" type="radio" name="bookCategory" value="seriesBook" id="seriesBook">
-                    </li>
-                </ul>
-            </form>
-        </section>
-        <!-- End of Book Categories -->
+      <!-- Book Categories -->
+      <section class="wrapper bookCategory">
+        <form action="#">
+          <ul>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add picture book list"
+                for="pictureBook"
+                >Picture Books</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="pictureBook"
+                id="pictureBook"
+              />
+            </li>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add children book list"
+                for="childrenBook"
+                >Children's Books</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="childrenBook"
+                id="childrenBook"
+              />
+            </li>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add children series book list"
+                for="seriesBook"
+                >Children's Series</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="seriesBook"
+                id="seriesBook"
+              />
+            </li>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add young adult book list"
+                for="youngAdultBook"
+                >Young Adult</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="youngAdultBook"
+                id="youngAdultBook"
+              />
+            </li>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add children series book list"
+                for="activities"
+                >Activity Books</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="activities"
+                id="activities"
+              />
+            </li>
+            <li class="radioButton">
+              <label
+                aria-label="Click to add children series book list"
+                for="education"
+                >Education</label
+              >
+              <input
+                aria-hidden="true"
+                type="radio"
+                name="bookCategory"
+                value="education"
+                id="education"
+              />
+            </li>
+          </ul>
+        </form>
+      </section>
+      <!-- End of Book Categories -->
 
-        <!-- Book List -->
-        <section class="wrapper">
-            <!-- Container for the List of Books -->
-            <div class="bookList" id="bookList"></div>
-        </section>
-        
+      <!-- Book List -->
+      <section class="wrapper">
+        <!-- Container for the List of Books -->
+        <div class="bookList" id="bookList"></div>
+      </section>
     </main>
 
     <footer>
-        <div class="wrapper footerContainer">
-            <p>Developed by Bart Yellapu and Pik Lin</p>
-        </div>
+      <div class="wrapper footerContainer">
+        <p>Developed by Bart Yellapu and Pik Lin</p>
+      </div>
     </footer>
 
-    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
